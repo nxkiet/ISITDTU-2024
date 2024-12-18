@@ -1,4 +1,3 @@
 # From ISITDTU with luv
 
-Hope Final Challenge work well hehe ...
-~>_<~
+Hope Final Challenge work well hehe ... ＞﹏＜
