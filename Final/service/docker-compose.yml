@@ -1,0 +1,19 @@
+version: "3.2"
+
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "12345:12345"
+    cpus: 1
+    pids_limit: 64
+    mem_limit: 512m
+    volumes:
+      - ./storage:/app/storage
+  cleaner:
+    image: c4tbuts4d/dedcleaner:latest
+    restart: unless-stopped
+    volumes:
+      - "./storage:/storage"
+
